@@ -3,8 +3,10 @@
 
 <head> 
   <script>
-    var bleep = new Audio ();
-    bleep.src = "frnd.mp3";
+    var audio = new Audio("frnd.mp3");
+    document.onclick = function() {
+    audio.play();
+}
   </script>  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +16,7 @@
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="style/style.css">
 </head>
-<body>
-  <nav>
-    <a href="#" onmousedown="bleep.play()">Play</a>
-  </nav>  
+<body> 
   <div class="container">
     <div class="one">
       <h1 class="one">Hey
