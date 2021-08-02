@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <a class="rope" href="" onclick="PlaySound()">
+  </a>  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,6 +14,15 @@
 </head>
 
 <body>
+  </script>
+
+<audio id="audiocracker" src="frnd.mp3" autostart="false"></audio>
+<script>
+    function PlaySound() {
+          var sound = document.getElementById("audiocracker");
+          sound.play()
+      }
+    </script> 
    <embed src="frnd.mp3" width="200" height="50" 
                      autoplay="true" loop="true">
       
